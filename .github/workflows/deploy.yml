@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: 'Provider'
+        required: true
+      credits:
+        description: 'Captcha credits'
+        required: true
+
+jobs:
+  qaTest:
+    name: Quality Assurance Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+      CI: 'true'
+      CREDITS: ${{github.event.inputs.credits}}
+      CAPTCHA_KEY: ${{secrets.CAPTCHA_KEY}}
+      WITAI_KEY: ${{secrets.WITAI_KEY}}
+      DOMAIN: ${{secrets.DOMAIN}}
+      NODE_ENV: 'production'
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v1
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Test A
+        if: ${{github.event.inputs.provider == 'gitlab'}}
+        uses: ./.github/actions/browser
+        with:
+          args: npm run gitlab
+
+      - name: Test B
+        if: ${{github.event.inputs.provider == 'bitbucket'}}
+        uses: ./.github/actions/browser
+        with:
+          args: npm run bitbucket

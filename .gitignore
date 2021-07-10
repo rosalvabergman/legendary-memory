@@ -1,0 +1,8 @@
+node_modules
+*.lock
+*-lock.*
+.browser
+.logs
+src
+.babelrc
+jsconfig.json

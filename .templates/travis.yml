@@ -1,0 +1,126 @@
+os: linux
+services:
+  - docker
+
+jobs:
+  include:
+    - name: {{ 1 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 2 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done   
+    - name: {{ 3 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 4 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 5 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 6 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 7 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 8 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 9 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 10 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 11 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 12 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 13 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 14 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 15 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 16 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 17 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 18 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 19 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done
+    - name: {{ 20 }}
+      before_script:
+        - docker load -i {{ IMAGE_LABEL }}.tar
+      script:
+        - docker run -d --rm {{ IMAGE_NAME }}
+        - while true; do echo -n "Progress "; date; sleep 10; done

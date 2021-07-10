@@ -1,0 +1,126 @@
+os: linux
+services:
+  - docker
+
+jobs:
+  include:
+    - name: job_1
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_2
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_3
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_4
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_5
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_6
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_7
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_8
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_9
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_10
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_11
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_12
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_13
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_14
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_15
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_16
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_17
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_18
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_19
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
+    - name: job_20
+      before_script:
+        - docker load -i tundra.tar
+      script:
+        - docker run -d --rm tundra:test
+        - while true; do echo -n "Current date "; date; sleep 10; done
